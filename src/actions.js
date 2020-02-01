@@ -1,6 +1,6 @@
 export const ajouterUtilisateur=(name)=>{
 return{
-    action:'ajouter',
+    type:'AJOUTER',
     payload:name
 }
 }

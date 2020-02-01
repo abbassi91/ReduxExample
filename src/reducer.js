@@ -3,9 +3,9 @@
 
 const reducer=(state,action)=>{
 switch(action.type){
-    case 'ajouter':
-        state.push(action.payload);
-        return state
+    case 'AJOUTER':
+       
+        return [...state,{name:action.payload}]
     default :
     return state;
 }

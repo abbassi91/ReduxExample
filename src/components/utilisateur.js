@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import {connect} from 'react-redux'
+import {ajouterUtilisateur} from './../actions'
 function Utilisateur({
     ajouter
 }) {
@@ -22,7 +23,7 @@ function Utilisateur({
 const mapDispatchToprops=(dispatch)=>{
 
     return{
-        ajouter:(name)=>dispatch({type:'ajouter',payload:name})
+        ajouter:(name)=>dispatch(ajouterUtilisateur(name))
     }
 }
 
